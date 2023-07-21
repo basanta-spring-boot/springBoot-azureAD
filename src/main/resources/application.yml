@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    azure:
+      active-directory:
+        enabled: true
+        profile:
+          tenant-id: <TENANT_ID>
+        credential:
+          client-id: <APPLICATION_ID>
+          client-secret: <SECRET-VALUE>
+server:
+  forward-headers-strategy: native
+  port: 9191
